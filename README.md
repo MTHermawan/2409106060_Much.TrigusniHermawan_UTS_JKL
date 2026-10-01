@@ -1,5 +1,6 @@
-# Much. Trigusni Hermawan - 2409106060
-UTS Jaringan Komputer Lanjut (Kelas B 2024)
+## Biodata
+Nama: Much. Trigusni Hermawan
+NIM: 2409106060
 
 ## Struktur Project
 - `identitas.py`        : identitas cabang dan pembuat ID perangkat

@@ -12,7 +12,6 @@ port_ssh_vm = 2222
 user_ssh = "mthermawan" 
 pass_ssh = "2409106060" 
   
-  
 def cek_ssh(): 
     client = paramiko.SSHClient() 
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy()) 
