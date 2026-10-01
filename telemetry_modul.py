@@ -11,11 +11,10 @@ from identitas import nim
 
 digit = [int(d) for d in nim]
 
-# Nilai diturunkan dari 3 digit terakhir NIM: batas_bawah_kelas + digit * pengali
 data_telemetry = {
-    "sampel_1": {"waktu": "10:00:00", "cpuUsage": 10 + digit[-1] * 4},  # 10..46 -> NORMAL
-    "sampel_2": {"waktu": "10:00:05", "cpuUsage": 50 + digit[-2] * 3},  # 50..77 -> WASPADA
-    "sampel_3": {"waktu": "10:00:10", "cpuUsage": 81 + digit[-3] * 2},  # 81..99 -> KRITIS
+    "sampel_1": {"waktu": "10:00:00", "cpuUsage": 10 + digit[-1] * 4},
+    "sampel_2": {"waktu": "10:00:05", "cpuUsage": 50 + digit[-2] * 3},
+    "sampel_3": {"waktu": "10:00:10", "cpuUsage": 81 + digit[-3] * 2},
 }
 
 
