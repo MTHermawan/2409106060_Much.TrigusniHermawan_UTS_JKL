@@ -30,4 +30,29 @@ def cek_ssh():
         print("[SSH] whoami di VM: " + hasil_whoami) 
         client.close() 
     except Exception as e: 
-        print("[SSH] GAGAL: " + str(e))
+        print("[SSH] GAGAL: " + str(e)) 
+  
+  
+async def cek_snmp(): 
+    try: 
+        errorIndication, errorStatus, errorIndex, varBinds = await get_cmd( 
+            SnmpEngine(), 
+            CommunityData(community), 
+            await UdpTransportTarget.create((host_vm, port_snmp_vm)), 
+            ContextData(), 
+            ObjectType(ObjectIdentity("1.3.6.1.2.1.1.5.0")) 
+        )
+        if errorIndication: 
+            print("[SNMP] GAGAL: " + str(errorIndication)) 
+        elif errorStatus: 
+            print("[SNMP] GAGAL: " + errorStatus.prettyPrint()) 
+        else: 
+            for vb in varBinds: 
+                print("[SNMP] sysName VM: " + str(vb[1])) 
+    except Exception as e: 
+        print("[SNMP] GAGAL: " + str(e)) 
+  
+  
+cek_ssh() 
+asyncio.run(cek_snmp()) 
+print("Pengecekan selesai untuk NIM " + nim + ".")
