@@ -1,21 +1,21 @@
-# Nama Lengkap Kamu - 2409106060
-UTS Jaringan Komputer Lanjut (Kelas B 2024) - Integration Network with Python
+# Much. Trigusni Hermawan - 2409106060
+UTS Jaringan Komputer Lanjut (Kelas B 2024)
 
 ## Struktur Project
 - `identitas.py`        : identitas cabang dan pembuat ID perangkat
-- `ssh_modul.py`        : akses SSH (Paramiko) dan perintah diagnostik
+- `ssh_modul.py`        : akses SSH (Paramiko)
 - `snmp_modul.py`       : pengambilan sysName lewat SNMPv2c (PySNMP)
 - `netconf_modul.py`    : pembuatan pesan NETCONF <rpc><edit-config>
 - `telemetry_modul.py`  : klasifikasi sampel cpuUsage
-- `main.py`             : integrasi dan laporan akhir (class LaporanCabang)
-- `requirements.txt`, `.gitignore`
+- `main.py`             : integrasi dan laporan akhir
+- `.gitignore`          : Mengabaikan file venv untuk di-commit
 
 ## Cara Menjalankan
 ```bash
-python -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
+python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-export JKL_HOST=<IP_VM>        # PowerShell: $env:JKL_HOST="<IP_VM>"
-python main.py                 # password SSH akan ditanyakan saat dijalankan
+export JKL_HOST=<IP_VM>
+python main.py
 ```
 
 ## Ringkasan Personalisasi
