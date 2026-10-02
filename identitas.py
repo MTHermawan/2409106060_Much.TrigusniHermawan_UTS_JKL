@@ -3,11 +3,11 @@
 """
 Nama file : 2409106060_modul.py
 Tujuan    : File module yang berisikan fungsi membantu pembuatan program utama.
-Pembuat   : Hermawan
+Pembuat   : Much. Trigusni Hermawan
 """
 
 nim = "2409106060"
-nama = "Hermawan"
+nama = "Much. Trigusni Hermawan"
 kode_cabang = nim[-3:]
 
 def buat_id_perangkat(jenis, nomor):

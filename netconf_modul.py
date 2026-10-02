@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Nama/NIM : Nama Lengkap Kamu / 2409106060
+Nama/NIM : Much. Trigusni Hermawan / 2409106060
 File     : netconf_modul.py
-Tujuan   : Membangun pesan NETCONF <rpc><edit-config> untuk membuat VLAN (ID = kode_cabang).
-Pembuat  : Nama Lengkap Kamu
+Tujuan   : Membangun pesan NETCONF <rpc><edit-config> untuk membuat VLAN (ID = 060).
+Pembuat  : Much. Trigusni Hermawan
 """
 
 from identitas import kode_cabang

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Nama/NIM : Nama Lengkap Kamu / 2409106060
+Nama/NIM : Much. Trigusni Hermawan / 2409106060
 File     : main.py
 Tujuan   : Mengintegrasikan semua modul lalu mencetak satu laporan akhir cabang.
-Pembuat  : Nama Lengkap Kamu
+Pembuat  : Much. Trigusni Hermawan
 """
 
 import asyncio

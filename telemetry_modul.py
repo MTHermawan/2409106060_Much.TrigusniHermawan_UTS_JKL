@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Nama/NIM : Nama Lengkap Kamu / 2409106060
+Nama/NIM : Much. Trigusni Hermawan / 2409106060
 File     : telemetry_modul.py
 Tujuan   : Mengklasifikasikan sampel cpuUsage (mirip hasil decode GPB) menjadi NORMAL/WASPADA/KRITIS.
-Pembuat  : Nama Lengkap Kamu
+Pembuat  : Much. Trigusni Hermawan
 """
 
 from identitas import nim
